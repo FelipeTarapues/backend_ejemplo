@@ -9,7 +9,15 @@ public class Manager {
     public Manager() {
         this.numeros = new ArrayList<>();
     }
-public void addNumeros (int numero){
+    public void addNumeros (int numero){
         this.numeros.add(numero);
-}
+    }
+
+    public int getSuma(){
+        int total = 0;
+        for (int numero : this.numeros) {
+            total += numero;
+        }
+        return total;
+    }
 }
